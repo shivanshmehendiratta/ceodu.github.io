@@ -1,0 +1,553 @@
+
+// Global
+
+/* MENU STYLES */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1002;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1001;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+font-weight: 600;
+   
+  background-color: #000000de;
+   
+
+  border-radius: 50%;
+  width: 300vw;
+  height: 300vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+
+   
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    transform: translate(-101%);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .navbar li {
+    padding: 15px;
+  }
+  
+  .navbar li:first-child {
+    margin-top: 50px;
+  }
+  
+  .navbar li a {
+    font-size: 1rem;
+  }
+   
+  .menu-toggle, .bar {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .mobile-nav {
+  transform: translate(0%)!important;
+}
+  
+.bar {
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(10, 10, 72, 1);
+    z-index: 99;
+    font-weight: 700;
+	}
+.bar .logo, .bar ul {
+    position: absolute;
+    top: 0;
+    height: 110%;
+}
+.bar .logo {
+    font-family: monument_extendedregular,sans-serif;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;}
+	.bar ul {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    right: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.bar .logo img{
+width: 80px;
+}
+.bar ul li {
+    height: 100%;
+	float: right;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: monument_extendedregular;
+    font-size: 11px;
+}
+
+.bar ul li a {
+    color: #fff;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+.bar ul li a img {
+    width: 20px;
+    display: block;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src:  url('../fonts/Calibre-Light.otf')  format('opentype'),
+        url('../fonts/Calibre-Light.woff')  format('woff'),
+        url('../fonts/Calibre-Light.ttf')  format('truetype'),
+        url('../fonts/Calibre-Light.svg#Calibre-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/*
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-regular-webfont.eot);
+    src: url(../fonts/calibre-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-regular-webfont.woff) format('woff'), url(../fonts/calibre-regular-webfont.ttf) format('truetype'), url(../fonts/calibre-regular-webfont.svg#calibre_regularregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-medium-webfont.eot);
+    src: url(../fonts/calibre-medium-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-medium-webfont.woff) format('woff'), url(../fonts/calibre-medium-webfont.ttf) format('truetype'), url(../fonts/calibre-medium-webfont.svg#Calibre) format('svg');
+    font-weight: 500;
+    font-style: normal
+}*/
+
+@font-face {
+    font-family: Calibre;
+    src: url(../fonts/calibre-semibold-webfont.eot);
+    src: url(../fonts/calibre-semibold-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/calibre-semibold-webfont.woff) format('woff'), url(../fonts/calibre-semibold-webfont.ttf) format('truetype'), url(../fonts/calibre-semibold-webfont.svg#calibresemibold) format('svg');
+    font-weight: 800;
+    font-style: normal
+}
+
+
+ .bar-hide ul {
+
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+	right:0;
+}
+// Layout
+
+.container {
+    overflow: hidden;
+	margin: auto;
+	max-width: 105.0rem;
+	padding: 0 2.5rem;
+	position: relative;
+	width: 100%;
+}
+
+
+
+// Font Size
+
+p, .title, li, ol, ul {
+  font-size: 3rem;
+  line-height: 125%;
+}
+.title{
+  font-weight: 600;
+  color: #0a0a48;
+}
+// Page list
+.page-list {
+  text-align: center;
+}
+
+// Footer
+
+/*main div:last-child p {
+  margin-bottom: 0rem;
+}*/
+
+footer {
+  margin-top: 3.5rem;
+  color: $gray-3;
+
+  text-align: center;
+      padding: 45px;
+    
+	background: #000000;
+h1{
+line-height: 1.6rem;
+}
+  }
+
+
+// Project Sectinos
+.posts {
+  margin-top: 0rem;
+}
+
+.project-section {
+  margin-top: 2.5rem;
+  height: 100%;
+}
+
+
+// Header
+
+header {
+
+    margin-bottom: 3rem;
+
+    a {
+      color: inherit;
+    }
+  }
+.latest {
+  font-size: 2.5rem;
+}
+
+.navigation {
+  text-align: center;
+   a {
+     color: $blue;
+   }
+   ul {
+     list-style: none;
+     display: inline-block;
+
+   }
+   li {
+     display: inline-block;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+     margin-left: 0.5rem;
+   }
+   .active a {
+     color: $color-secondary;
+   }
+   li:first-child {
+     margin-left: 0rem;
+   }
+   li:after {
+     content:" / ";
+   }
+   li:last-child:after {
+     content: "";
+   }
+}
+
+.name {
+  float: left;
+  margin-bottom: 0rem;
+
+}
+.pages {
+  line-height: 0.1rem;
+  margin-bottom: 0rem;
+  float: right;
+}
+
+.nw {
+  white-space: nowrap;
+}
+
+
+
+header .social {
+  
+}
+
+footer .social {
+  
+}
+
+
+
+@media only screen and (min-width: $first-breakpoint) {
+ .bar-hide{
+ display:none;
+ }
+ .menu-wrap{
+   display: none;
+ }
+ .project-section {
+    margin-top: 2.5rem;
+    height: 100%;
+    flex: 1;
+
+    padding-right: 20px;
+}
+
+
+.posts {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+	
+    .pages {
+      float: none;
+
+    }
+
+
+    footer .social, header .social {
+      position: relative;
+      bottom: 1rem;
+    }
+
+}
+
+footer .social .icons {
+  position: relative;
+  bottom: -0.6em;
+  margin-right: 1rem;
+}
+
+/*
+footer input[type='submit'] {
+	position: relative;
+  top: -0px;
+  left: -2rem;
+  border-top-left-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+}
+*/
+
+@media only screen and (max-width: $first-breakpoint) {
+.specialul{
+  display: none;
+}
+  header .social {
+    float: left;
+  }
+  .footer {
+    text-align: left;
+  }
+
+.footer-social {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+footer .social {
+  margin-bottom: 2.5rem;
+}
+
+
+
+}
+
+// Icons
+
+.icon {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    bottom: 0.5rem;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        path {
+            fill: $black;
+        }
+    }
+}
+
+
+.icon--twitter, .icon--instagram, .icon--mail, .icon--facebook, .icon--youtube {
+  height: 3rem;
+  width: 3rem;
+  bottom: -0.0rem;
+  margin-right: 0rem
+}
+
+.icon--mail {
+
+  height: 3.7rem;
+  width: 5.6rem;
+  bottom: -0.45rem;
+
+}
+
+.icon--instagram {
+  height: 2.7rem;
+  width: 2.7rem;
+}
+
+.icon--twitter, .icon--youtube {
+  margin-right: 1rem;
+  bottom: -0.15rem;
+}
+.icon:last-child {
+  /*margin-right: 0;*/
+}
+
+small a:first-child {
+  /*margin-right: 1rem;*/
+}
+
+.press {
+  font-size:0.8em;
+  background-color: whitesmoke;
+  padding: 2px 5px;
+  color: $gray-2;
+}
+.partner {
+  font-size: 2rem;
+
+}
