@@ -301,7 +301,7 @@ width: 80px;
 // Font Size
 
 p, .title, li, ol, ul {
-	font-family:"Times New Roman";
+	font-family:inherit;
   font-size: 2rem;
   line-height: 125%;
 }
@@ -473,6 +473,7 @@ footer input[type='submit'] {
 }
 	footer h1 {
     line-height: initial;
+		text-align: center;
 }
   header .social {
     float: left;
