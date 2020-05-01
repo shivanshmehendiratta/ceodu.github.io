@@ -301,6 +301,7 @@ width: 80px;
 // Font Size
 
 p, .title, li, ol, ul {
+	font-family:"Times New Roman";
   font-size: 2rem;
   line-height: 125%;
 }
@@ -469,6 +470,9 @@ footer input[type='submit'] {
 @media only screen and (max-width: $first-breakpoint) {
 .specialul{
   display: none;
+}
+	footer h1 {
+    line-height: initial;
 }
   header .social {
     float: left;
