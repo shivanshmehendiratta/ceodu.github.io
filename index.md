@@ -16,23 +16,25 @@ videos: true
 <div class="row first-xs between-sm">
     <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
-<div><i class="fas fa-users"></i></div>
-### <i class="fas fa-users"></i> Research and Analysis
-We take up consulting projects and help starts forming appropriate strategies leveraging the power of analytics.
+<div style="font-size: 6rem"><i class="fas fa-search"></i></div>
+###  Research and Analysis
+We perform thorough research co
 
 
   </div>
 
   <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
-### <i class="fas fa-users"></i>  Strategy and Product
+<div style="font-size: 6rem"><i class="fas fa-chess"></i></div>
+###  Strategy and Product
 We help startups to lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
 
   </div>
 
   <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
-###  <i class="fas fa-users"></i> Growth and Marketing
+<div style="font-size: 6rem"><i class="fas fa-users"></i></div>
+###  Growth and Marketing
 
 We take the responsibility of taking the startups from a few live customers to 
   </div>
