@@ -8,9 +8,10 @@ image: /blog/shook-1.jpg
 {% include showcase.html %}
 </html>
 
-<div style="background-color:grey">
-<div class="container">
-
+<div style="background-color:#f2f2ff">
+<div class="container" style="    padding-top: 50px;
+    padding-bottom: 50px;">
+<h1> What we do? </h1>
 
 <div class="row first-xs between-sm">
     <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
