@@ -8,7 +8,7 @@ videos: true
 </html>
 
 <div style="background-color:#f2f2ff;
-            margin-bottom: 3rem">
+            ">
 <div class="container" style="    padding-top: 50px;
     padding-bottom: 50px; text-align: center;">
     <h1 style="font-size: 4rem"> What we do? </h1>
