@@ -42,7 +42,7 @@ We take the responsibility of taking the startups from a few live customers to
 </div>
 </div>
 
-<div style="background-color:#f2f2ff;
+<div style="background-color:#fff;
             margin: 3rem">
 <div class="container" style="    padding-top: 50px;
     padding-bottom: 50px; text-align: center;">
