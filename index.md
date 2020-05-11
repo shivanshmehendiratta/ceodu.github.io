@@ -2,7 +2,6 @@
 layout: default
 title: CEO DU
 videos: true
-image: /blog/shook-1.jpg
 ---
 <html>
 {% include showcase.html %}
@@ -10,8 +9,8 @@ image: /blog/shook-1.jpg
 
 <div style="background-color:#f2f2ff">
 <div class="container" style="    padding-top: 50px;
-    padding-bottom: 50px;">
-<h1> What we do? </h1>
+    padding-bottom: 50px; text-align: center;">
+<h1 style="font-size: 4rem"> What we do? </h1>
 
 <div class="row first-xs between-sm">
     <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
@@ -41,6 +40,7 @@ We take the responsibility of taking the startups from a few live customers to
 </div>
 </div>
 <div class="container">
+
 <h1>Featured Blogs</h1>
 <div class="posts">
 
