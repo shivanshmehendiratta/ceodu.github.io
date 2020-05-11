@@ -48,7 +48,7 @@ We take the responsibility of taking the startups from a few live customers to
     padding-bottom: 50px; text-align: center;">
     <h1 style="font-size: 4rem"> Portfolio</h1>
 
-<img src="/0.jpg" alt="Woodsville Academy">
+<img src="/0.jpg" alt="Woodsville Academy" style="width: 200px">
 
 </div>
 </div>
