@@ -10,6 +10,36 @@ image: /blog/shook-1.jpg
 
 
 <div class="container">
+
+
+<div class="row first-xs between-sm">
+    <div class="col-xs-12 col-sm-4" markdown="1">
+
+
+###  Consulting
+We take up consulting projects and help starts forming appropriate strategies leveraging the power of analytics.
+
+
+  </div>
+
+  <div class="col-xs-12 col-sm-4" markdown="1">
+
+###   Advisory
+We help startups to lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
+
+  </div>
+
+  <div class="col-xs-12 col-sm-4" markdown="1">
+
+###  Chapter Startup
+
+We don't hesitate in taking up the responsibiliy on our heads and step up to solve the problems with the team we have. 
+
+  </div>
+
+</div>
+
+
 <h1>Featured Blogs</h1>
 <div class="posts">
 
