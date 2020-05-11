@@ -5,7 +5,7 @@ videos: true
 ---
 <html>
 {% include showcase.html %}
-</html>
+</html><script src="https://kit.fontawesome.com/aef02ef4d3.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
 <div style="background-color:#f2f2ff;
             ">
