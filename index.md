@@ -8,38 +8,38 @@ image: /blog/shook-1.jpg
 {% include showcase.html %}
 </html>
 
-
+<div style="background-color:grey">
 <div class="container">
 
 
 <div class="row first-xs between-sm">
-    <div class="col-xs-12 col-sm-4" markdown="1">
+    <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
 
-###  Consulting
+### <i class="fas fa-users"></i> Research and Analysis
 We take up consulting projects and help starts forming appropriate strategies leveraging the power of analytics.
 
 
   </div>
 
-  <div class="col-xs-12 col-sm-4" markdown="1">
+  <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
-###   Advisory
+### <i class="fas fa-users"></i>  Strategy and Product
 We help startups to lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor.
 
   </div>
 
-  <div class="col-xs-12 col-sm-4" markdown="1">
+  <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
-###  Chapter Startup
+###  <i class="fas fa-users"></i> Growth and Marketing
 
-We don't hesitate in taking up the responsibiliy on our heads and step up to solve the problems with the team we have. 
-
+We take the responsibility of taking the startups from a few live customers to 
   </div>
 
 </div>
-
-
+</div>
+</div>
+<div class="container">
 <h1>Featured Blogs</h1>
 <div class="posts">
 
