@@ -16,7 +16,7 @@ videos: true
 <div class="row first-xs between-sm">
     <div class="col-xs-12 col-sm-4" markdown="1" style="text-align:center">
 
-
+<div><i class="fas fa-users"></i></div>
 ### <i class="fas fa-users"></i> Research and Analysis
 We take up consulting projects and help starts forming appropriate strategies leveraging the power of analytics.
 
