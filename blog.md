@@ -18,49 +18,33 @@ title: Blog
   {% endif %}
 {% endfor %}
 
-<h1>All posts</h1>
 
-
+<!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
-
-
-{% if post.featured %}
-{% else %}
-
-  <div class="post">
-
-
-
-    <h1 class="post-title" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    {% if post.description %}<p class="post-description">{{ post.description }}…</p>{% endif %}
-
-
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
   </div>
-  {% endif %}
 {% endfor %}
-{% if paginator.total_pages > 1 %}
+
+<!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <span class="previous">Previous</span>
   {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="/">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <span class="next ">Next</span>
   {% endif %}
-</div>
-{% endif %}
 </div>
