@@ -52,6 +52,8 @@ defaults:
       path: ""
     values:
       image: /bg.jpeg
+      paginate: 10
+      paginate_path: "/page:num/"
 
 profile: /bg.jpg
 
