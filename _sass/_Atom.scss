@@ -196,7 +196,7 @@ font-weight: 600;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(10, 10, 72, 1);
+    background-color: #fff;
     z-index: 99;
     font-weight: 700;
 	}
@@ -206,7 +206,6 @@ font-weight: 600;
     height: 110%;
 }
 .bar .logo {
-    font-family: monument_extendedregular,sans-serif;
     left: 20px;
     display: flex;
     align-items: center;
@@ -226,12 +225,11 @@ width: 80px;
 }
 .bar ul li {
     height: 100%;
-	float: right;
+    float: right;
     display: flex;
     align-items: center;
     padding: 0 10px;
-    font-family: monument_extendedregular;
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .bar ul li a {
