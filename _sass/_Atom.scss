@@ -513,7 +513,10 @@ footer input[type='submit'] {
 
 	
                         .showcase-elements-image{max-width: 80%;
-	margin-left:0px;}
+	margin-left:0px;
+	max-width:80vw;
+				padding-bottom:5%;
+	}
 	
                         .showcase-elements-text{max-width: 80vw;
 				padding-right:0px;
@@ -522,6 +525,7 @@ footer input[type='submit'] {
 	margin-top:2rem;
   font-size: 5.5rem;
   line-height: 0.9;
+	margin-bottom:0;
 }
 
 .showcase p {
