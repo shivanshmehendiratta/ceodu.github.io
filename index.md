@@ -7,9 +7,9 @@ videos: true
 {% include showcase.html %}
 </html><script src="https://kit.fontawesome.com/aef02ef4d3.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
-<div style="background-color:#f2f2ff;
+<div id="what" style="background-color:#0a0a48;
             ">
-<div class="container" style="    padding-top: 50px;
+<div class="container" style="    padding-top: 50px; color:#fff;
     padding-bottom: 50px; text-align: center;">
     <h1 style="font-size: 4rem"> What we do? </h1>
 
