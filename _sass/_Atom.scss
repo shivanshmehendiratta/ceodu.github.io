@@ -446,7 +446,12 @@ display: grid;
 }
 
 	.post-tittle-web{
-	grid-area: 1/1/20/6;
+	grid-area: 1/1/14/6;
+	}
+	
+	.post-tittle-date-web{
+	grid-area: 15/1/14/6;
+		font-size: 1.2rem;
 	}
 	
  .bar-hide{
