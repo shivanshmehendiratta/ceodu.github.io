@@ -8,10 +8,10 @@ title: Blog
 {% for post in site.posts %}
 
 {% if post.featured %}
-  <div class="post post-web" >
+  <div class="posts post-web" >
 
 
-    <h1 class="post-title post-title-web" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a></h1><br><div class=post-title-date-web> {{ page.date | date_to_string }} </div>
+    <h1 class="post-title post-title-web" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a></h1><div class="post-title-date-web"><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time></div>
     {% if post.description %}<p class="post-description post-description-web">{{ post.description }}<br><a href="{{ post.url }}"><u>...Read more</u></a></p>{% endif %}
 
   </div>
