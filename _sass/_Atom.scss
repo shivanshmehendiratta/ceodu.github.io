@@ -1,7 +1,6 @@
-
+ 
 // Global
 .post-title{
-	
 	h1{
 	 font-size: 2.5rem;
 		a{
@@ -357,7 +356,6 @@ line-height: 1.6rem;
   margin-top: 0rem;
 }
 
-
 .project-section {
   margin-top: 2.5rem;
   height: 100%;
@@ -436,17 +434,18 @@ footer .social {
 
 
 @media only screen and (min-width: $first-breakpoint) {
-	.post-description{
+	
+	.post-description-web{
 grid-area: 1/7/20/20;
 }
-.posts {
+.post-web {
 display: grid;
     grid-template-columns: repeat(20,5%);
     grid-template-rows: repeat(20,5%);
     padding-bottom: 5rem;
 }
-	
-	.post-tittle{
+
+	.post-tittle-web{
 	grid-area: 1/5/1/1;
 	}
 	
