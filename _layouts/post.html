@@ -9,7 +9,7 @@ layout: default
 
   {% if page.archive == nil %}<h1 class="post-title">{{ page.title }}</h1>{% endif %}
   <p>{% if page.press != nil %}<span class="press">Press:</span> {% for press in site.data.press[page.press] %}<a href="{{ press.article_link }}" class="press">{{ press.name }}{% if forloop.last == false %},{% else %}.{% endif %}</a> {% endfor %}{% endif %}</p>
-  {% if page.description %}<p class="post-description">{{ page.description | markdownify }}</p><br><p><a href="{{ post.url }}">...Read more</a></p>{% endif %}
+  {% if page.description %}<p class="post-description">{{ page.description | markdownify }}</p>{% endif %}
   <p>{{ content }}</p>
 
 
