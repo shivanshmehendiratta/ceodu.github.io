@@ -1,7 +1,7 @@
 
 // Global
 .post-title{
-	grid-area: 1/5/1/1;
+	
 	h1{
 	 font-size: 2.5rem;
 		a{
@@ -350,20 +350,13 @@ h1{
 line-height: 1.6rem;
 }
   }
-.post-description{
-grid-area: 1/7/20/20;
-}
+
 
 // Project Sectinos
 .posts {
   margin-top: 0rem;
 }
-.post {
-display: grid;
-    grid-template-columns: repeat(20,5%);
-    grid-template-rows: repeat(20,5%);
-    padding-bottom: 5rem;
-}
+
 
 .project-section {
   margin-top: 2.5rem;
@@ -443,6 +436,19 @@ footer .social {
 
 
 @media only screen and (min-width: $first-breakpoint) {
+	.post-description{
+grid-area: 1/7/20/20;
+}
+.post {
+display: grid;
+    grid-template-columns: repeat(20,5%);
+    grid-template-rows: repeat(20,5%);
+    padding-bottom: 5rem;
+}
+	
+	.post-tittle{
+	grid-area: 1/5/1/1;
+	}
 	
  .bar-hide{
  display:none;
