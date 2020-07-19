@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Startup Lingo Deciphered
-description: The onset of start-up culture has led to the awakening of entrepreneurship
+description: The onset of start-up culture has led to the awakening of entrepreneurship <a href="/">Read More</a>
 
 date: 2019-01-01
 featured: no
