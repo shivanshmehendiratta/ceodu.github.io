@@ -11,7 +11,7 @@ title: Blog
   <div class="post post-web" >
 
 
-    <h1 class="post-title post-title-web" style="margin-bottom: 0rem;"><a href="{{ post.url }}">{{ post.title }}</a><br><div class=post-title-date-web>{{ page.date | date_to_string }}</div></h1>
+    <div class="post-title post-title-web" style="margin-bottom: 0rem;"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1><br><div class=post-title-date-web>{{ page.date | date_to_string }}</div></div>
     {% if post.description %}<p class="post-description post-description-web">{{ post.description }}<br><a href="{{ post.url }}"><u>...Read more</u></a></p>{% endif %}
 
   </div>
